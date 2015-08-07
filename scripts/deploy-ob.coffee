@@ -22,6 +22,6 @@ module.exports = (robot) ->
   robot.router.post '/hubot/build-ob-done/:port', (req, res) ->
     port = req.params.port
 
-    robot.messageRoom '', "Onboarding successfully deployed: https://vbs-purchase-fe-vm-01.dloco.s.vonagenetworks.net:#{port}"
+    robot.messageRoom '296829_onboarding@conf.hipchat.com', "Onboarding successfully deployed: https://vbs-purchase-fe-vm-01.dloco.s.vonagenetworks.net:#{port}"
 
     res.send 'OK'
