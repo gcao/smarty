@@ -1,3 +1,7 @@
+# Commands:
+#   hubot deploy onboarding <port> - Deploy onboarding to devloco on port number.
+#
+
 module.exports = (robot) ->
   ports =
     444: 'vbs-ob-deploy-dloco'
