@@ -8,5 +8,7 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-trivia-game"
+  "hubot-trivia-game",
+  "jira-issues.coffee",
+  "jira.coffee"
 ]
