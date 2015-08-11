@@ -5,6 +5,7 @@
   "author": "vondroid.chatbot@gmail.com",
   "description": "A helpful robot for Vonage",
   "dependencies": {
+    "cheerio": "^0.19.0",
     "hubot": "^2.13.2",
     "hubot-business-cat": "^1.2.3",
     "hubot-diagnostics": "0.0.1",
