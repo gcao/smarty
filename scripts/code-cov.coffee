@@ -21,4 +21,4 @@ module.exports = (robot) ->
         when val < 80 then "Come on... you can do better!"
         when val < 90 then "Good.. but not good enough."
         when val >= 90 then "That's what I'm talking about!"
-      msg.send "#{val}%  #{admonishment}"
+      msg.send "Code coverage is #{val}%. #{admonishment}"
