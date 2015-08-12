@@ -13,5 +13,6 @@ export HUBOT_JIRA_URL="https://jiradev.snap.vonagenetworks.net:8443/jiraDev"
 export HUBOT_JIRA_USER="proteus_user"
 export HUBOT_JIRA_PASSWORD="proteus"
 export HUBOT_JIRA_USE_V2="true"
+export HUBOT_STANDUP_PREPEND="(standup)"
 
 bin/hubot --adapter hipchat
