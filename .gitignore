@@ -3,3 +3,4 @@ node_modules
 .hubot_history
 res/
 dump.rdb
+nohup.out
