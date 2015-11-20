@@ -8,6 +8,11 @@ module.exports = (robot) ->
     8100: 'vbs-ob-deploy-dloco-m1'
     8110: 'vbs-ob-deploy-dloco-m2'
     8120: 'vbs-ob-deploy-dloco-m3'
+    8130: 'vbs-ob-deploy-dloco-m4'
+    8140: 'vbs-ob-deploy-dloco-m5'
+    8150: 'vbs-ob-deploy-dloco-m6'
+    8160: 'vbs-ob-deploy-dloco-m7'
+    8170: 'vbs-ob-deploy-dloco-m8'
 
   robot.respond /deploy (ob|onboarding) ?(\d+)?/i, (msg)->
     port = msg.match[2] || 444
