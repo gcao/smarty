@@ -1,1 +1,0 @@
-/Users/ashvets/.tyuan/cmt-del.coffee
