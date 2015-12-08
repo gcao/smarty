@@ -1,8 +1,9 @@
 #!/bin/bash
 
+# while true; do ./hipchat_startup.sh; done
 # Passwords and stuff shouldn't be in source control.. good thing this is private!
 
-export EXPRESS_PORT=9090
+export EXPRESS_PORT=${EXPRESS_PORT:-9090}
 export HUBOT_HIPCHAT_JID="30164_3213923@chat.hipchat.com"
 #export HUBOT_HIPCHAT_PASSWORD=""
 export HUBOT_HIPCHAT_ROOMS="30164_room_99@conf.hipchat.com"
@@ -15,5 +16,6 @@ export HUBOT_JIRA_USERNAME="proteus_user"
 export HUBOT_JIRA_USE_V2="true"
 #export HUBOT_STANDUP_PREPEND="(standup)"
 #export HUBOT_STANDUP_ROOM="296829_onboarding@conf.hipchat.com"
+export HUBOT_JENKINS_URL=http://subscribe-vm-06.dloco.s.vonagenetworks.net:8080/
 
 bin/hubot --adapter hipchat

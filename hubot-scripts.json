@@ -1,4 +1,5 @@
 [
   "jira-issues.coffee",
-  "jira.coffee"
+  "jira.coffee",
+  "jenkins.coffee"
 ]
