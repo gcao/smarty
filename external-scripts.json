@@ -7,7 +7,5 @@
   "hubot-maps",
   "hubot-redis-brain",
   "hubot-rules",
-  "hubot-shipit",
-  "hubot-trivia-game",
-  "hubot-standup-alarm"
+  "hubot-shipit"
 ]
