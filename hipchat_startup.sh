@@ -5,8 +5,7 @@
 export EXPRESS_PORT=9090
 export HUBOT_HIPCHAT_JID="30164_3213923@chat.hipchat.com"
 #export HUBOT_HIPCHAT_PASSWORD=""
-# 2234470: Room 99
-export HUBOT_HIPCHAT_ROOMS="2234470@conf.hipchat.com"
+export HUBOT_HIPCHAT_ROOMS="30164_room_99@conf.hipchat.com"
 export HUBOT_JIRA_LOOKUP_USERNAME="proteus_user"
 #export HUBOT_JIRA_LOOKUP_PASSWORD=""
 export HUBOT_JIRA_LOOKUP_URL="https://jiradev.snap.vonagenetworks.net:8443/jiraDev"
