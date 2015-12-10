@@ -56,12 +56,12 @@ module.exports = (robot) ->
                             downloaded_updates = true
                             #msg.send "I downloaded some updates, KILL ME PLEASE! (hint: hubot die)"
                             msg.send "Restarting..."
-                            process.exit 0
+                            setTimeout 1000, -> process.exit 0
                         else
                             if downloaded_updates
                                 #msg.send "I have some pending updates, KILL ME PLEASE! (hint: hubot die)"
                                 msg.send "Restarting..."
-                                process.exit 0
+                                setTimeout 1000, -> process.exit 0
                             else
                                 msg.send "I'm up-to-date!"
                 catch error
