@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# while true; do ./hipchat_startup.sh; done
+# while true; do ./hipchat_startup.sh; sleep 1; done
 # Passwords and stuff shouldn't be in source control.. good thing this is private!
 
 export EXPRESS_PORT=${EXPRESS_PORT:-9090}
