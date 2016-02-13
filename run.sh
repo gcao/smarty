@@ -18,4 +18,7 @@ export AMQP_USERNAME=${AMQP_USERNAME:-guest}
 export AMQP_PASSWORD=${AMQP_PASSWORD:-guest}
 export AMQP_URL=amqp://$AMQP_USERNAME:$AMQP_PASSWORD@$AMQP_SERVER
 
+# https://my.slack.com/services/new/hubot
+#export HUBOT_SLACK_TOKEN=XYZ
+
 bin/hubot --adapter slack
