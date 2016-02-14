@@ -5,6 +5,8 @@
 
 export EXPRESS_PORT=${EXPRESS_PORT:-9090}
 
+#export HUBOT_LOG_LEVEL=debug
+
 export HUBOT_HIPCHAT_JID="30164_3213923@chat.hipchat.com"
 #export HUBOT_HIPCHAT_PASSWORD=""
 export HUBOT_HIPCHAT_ROOMS="30164_room_99@conf.hipchat.com,30164_room_98@conf.hipchat.com"
