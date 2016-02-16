@@ -2,8 +2,8 @@
 #   hubot anything
 #
 
-uuid = require 'node-uuid'
-amqp = require 'amqplib'
+uuid  = require 'node-uuid'
+amqp  = require 'amqplib'
 when_ = require 'when'
 
 module.exports = (robot) ->

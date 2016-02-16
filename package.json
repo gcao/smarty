@@ -21,9 +21,6 @@
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.16.1",
     "hubot-shipit": "^0.2.0",
-    "hubot-standup-alarm": "jffjs/hubot-standup-alarm",
-    "hubot-trivia-game": "jffjs/hubot-trivia-game",
-    "mongoose": "^4.3.0",
     "node-uuid": "^1.4.7",
     "when": "^3.7.6"
   },
