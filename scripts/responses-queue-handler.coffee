@@ -7,12 +7,13 @@ module.exports = (robot) ->
       channel.consume(
         'responses'
         , (msg) ->
+          console.log "======== RESPONSE ========"
           console.log msg.content.toString()
-          obj = JSON.parse msg.content.toString()
-          if obj.room
-            robot.messageRoom obj.reply_to, obj.content
+          {source: {reply_to, room}, content} = JSON.parse msg.content.toString()
+          if room
+            robot.messageRoom reply_to, content
           else
-            robot.send {user: obj.reply_to}, obj.content
+            robot.send {user: reply_to}, content
         , {noAck: true}
       )
 

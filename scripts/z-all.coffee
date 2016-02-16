@@ -20,8 +20,10 @@ module.exports = (robot) ->
 
             request =
               id: uuid.v4()
-              reply_to: msg.message.user.reply_to
-              room: msg.message.room
+              source: {
+                reply_to: msg.message.user.reply_to
+                room: msg.message.room
+              },
               message: msg.match[1]
 
             channel.sendToQueue('requests', new Buffer(JSON.stringify(request)))
