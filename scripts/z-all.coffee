@@ -15,9 +15,7 @@ module.exports = (robot) ->
     amqp.connect(process.env.AMQP_URL).then (conn) ->
       when_(
         conn.createChannel().then(
-          (channel) ->
-            channel.assertQueue 'requests'
-
+          (ch) ->
             request =
               id: uuid.v4()
               source: {
@@ -26,7 +24,8 @@ module.exports = (robot) ->
               },
               message: msg.match[1]
 
-            channel.sendToQueue('requests', new Buffer(JSON.stringify(request)))
+            #ex = ch.assertExchange('requests-x', 'fanout')
+            ch.publish('requests-x', 'requests', new Buffer(JSON.stringify(request)))
         )
       )#.ensure(-> conn.close())
 

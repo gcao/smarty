@@ -2,9 +2,10 @@ amqp = require 'amqplib'
 
 module.exports = (robot) ->
   amqp.connect(process.env.AMQP_URL).then (conn) ->
-    conn.createChannel().then (channel) ->
-      channel.assertQueue 'responses'
-      channel.consume(
+    conn.createChannel().then (ch) ->
+      ex = ch.assertExchange('responses-x', 'fanout')
+      ch.bind(ex)
+      ch.consume(
         'responses'
         , (msg) ->
           console.log "======== RESPONSE ========"
