@@ -2,10 +2,8 @@
 
 Smarty is a chat bot built on the [Hubot][hubot] framework.
 
-## Architecture
-
-Use ActiveMQ/STOMP to route tasks to agents that run on any machines as long as they can
-talk to the queue server.
+Please find more information on the [Wiki page][wiki].
 
 [hubot]: http://hubot.github.com
+[wiki]: https://github.com/VonageDev/smarty/wiki
 
