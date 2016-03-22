@@ -1,12 +1,6 @@
-Stomp = require('stomp-client')
+client = require '../lib/shared-stomp-client'
 
 module.exports = (robot) ->
-  client = new Stomp
-    host: process.env.STOMP_SERVER
-    port: process.env.STOMP_PORT
-    user: process.env.STOMP_USERNAME
-    pass: process.env.STOMP_PASSWORD
-
   client.connect ->
     client.subscribe "/topic/responses", (body, headers) ->
       console.log "======== RESPONSE ========"
