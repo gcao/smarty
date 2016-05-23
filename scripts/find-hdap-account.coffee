@@ -14,6 +14,11 @@ module.exports = (robot) ->
     task =
       id: uuid.v4()
       source:
+        id: msg.message.user.id
+        jid: msg.message.user.jid
+        name: msg.message.user.name
+        mention_name: msg.message.user.mention_name
+        email_address: msg.message.user.email_address
         reply_to: msg.message.user.reply_to
         room: msg.message.room
       type: 'find-hdap-account'

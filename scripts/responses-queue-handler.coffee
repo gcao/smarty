@@ -5,9 +5,9 @@ module.exports = (robot) ->
     client.subscribe "/topic/responses", (body, headers) ->
       console.log "======== RESPONSE ========"
       console.log body
-      {source: {reply_to, room}, content} = JSON.parse body
-      if room
-        robot.messageRoom reply_to, content
+      {source, content} = JSON.parse body
+      if source.room
+        robot.messageRoom source.reply_to, "@#{source.mention_name} #{content}"
       else
-        robot.send {user: reply_to}, content
+        robot.send {user: source.reply_to}, content
 
